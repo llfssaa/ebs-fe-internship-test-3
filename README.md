@@ -15,7 +15,7 @@ Display a 5-day weather forecast, where each day shows the high and low temperat
 3. Sign up for a free API key from [Open Weather Map](https://openweathermap.org/), fetch a real 5-day forecast, and feed that data into your app.
 
 ## Design examples:
-(5 day forecast)[https://prnt.sc/t49a8q]
-(1 day forecast)[https://prnt.sc/t49dm8]
+[5 day forecast](https://prnt.sc/t49a8q)
+[1 day forecast](https://prnt.sc/t49dm8)
 
-(Source)[https://weather.com/weather/today/l/47.06,28.85?par=google&temp=c]
+[Source](https://weather.com/weather/today/l/47.06,28.85?par=google&temp=c)
