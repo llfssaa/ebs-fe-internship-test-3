@@ -8,7 +8,8 @@ Display a 5-day weather forecast, where each day shows the high and low temperat
 3. React Router
 4. React Hooks
 5. Axios
-6. Atomic Design Pattern (ask your mentor first)
+6. dayjs
+7. Atomic Design Pattern (ask your mentor first)
 
 ## Todo:
 1. Add the ability to click on a day, and see its hourly forecast.
