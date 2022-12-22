@@ -2,24 +2,41 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "prettier"
+        "plugin:@typescript-eslint/recommended",
+        "airbnb",
+        "airbnb/hooks",
+        "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "tsx": true
         },
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": [
-        "react", "react-hooks", "@typescript-eslint", "prettier"
-    ],
+    "plugins": ["react", "@typescript-eslint", "prettier", "import"],
+    "settings": {
+        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {
+                "directory": "./tsconfig.json"
+            },
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
     "rules": {
         "import/extensions": [
             "error",
@@ -33,6 +50,7 @@
         ],
         "react/react-in-jsx-scope": "off",
         "camelcase": "error",
+        "spaced-comment": "error",
         "quotes": ["error", "single"],
         "no-duplicate-imports": "error",
         "no-shadow": "off",
