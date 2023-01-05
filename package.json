@@ -10,9 +10,12 @@
     "@types/node": "^16.18.9",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
+    "axios": "^1.2.2",
+    "dayjs": "^1.11.7",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.5.2",
     "eslint-plugin-prettier": "^4.2.1",
+    "node-sass": "^7.0.3",
     "prettier": "^2.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,7 +31,8 @@
     "prepare": "husky install",
     "lint": "eslint ./src}",
     "lint:fix": "eslint ./src --fix ",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write .",
+    "server": "json-server --watch ./src/assets/mock-data/mock-data.json --port 8000"
   },
   "eslintConfig": {
     "extends": [
