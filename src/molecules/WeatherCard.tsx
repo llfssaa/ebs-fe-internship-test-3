@@ -12,8 +12,10 @@ const localizedFormat = require('dayjs/plugin/localizedFormat');
 dayjs.extend(localizedFormat);
 
 function WeatherCard({ ...data }: IWeatherCardProps) {
+  console.log(data);
+  if (!data.data) return <div>Loading</div>;
   const { city, temperature, time, info, description } = data.data;
-  return (
+  return data?.data ? (
     <div className="weather-card">
       <p>{city}</p>
       <p>as of {dayjs(time).format('LT')}</p>
@@ -21,6 +23,8 @@ function WeatherCard({ ...data }: IWeatherCardProps) {
       <p className="info">{info}</p>
       <p>{description}</p>
     </div>
+  ) : (
+    <div>Loading</div>
   );
 }
 
