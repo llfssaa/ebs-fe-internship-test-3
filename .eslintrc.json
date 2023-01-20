@@ -48,11 +48,15 @@
         "tsx": "never"
       }
     ],
+    "react-hooks/exhaustive-deps": "off",
+    "no-unused-vars": "off",
+    "import/order": "warn",
+    "react/self-closing-comp": "warn",
     "react/react-in-jsx-scope": "off",
-    "camelcase": "error",
-    "spaced-comment": "error",
-    "quotes": ["error", "single"],
-    "no-duplicate-imports": "error",
+    "camelcase": "warn",
+    "spaced-comment": "warn",
+    "quotes": ["warn", "single"],
+    "no-duplicate-imports": "warn",
     "no-shadow": "off",
     "@typescript-eslint/no-unused-vars": "warn",
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]

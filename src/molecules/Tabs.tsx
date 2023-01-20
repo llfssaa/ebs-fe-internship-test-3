@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Tabs() {
   const [activeTab, setActiveTab] = useState(0);
-  const days = ['today', 'fivedays'];
+  const days = ['one-day', 'shows-5-day-forecast'];
 
   const handleTabClick = (index: number) => {
     setActiveTab(index);
@@ -18,7 +18,7 @@ function Tabs() {
           className={`tab ${index === activeTab ? 'active' : ''}`}
           onClick={() => handleTabClick(index)}
         >
-          {day === 'today' ? 'Today' : 'Five Days'}
+          {day === 'one-day' ? 'For one day' : 'For five Days'}
         </Link>
       ))}
     </div>

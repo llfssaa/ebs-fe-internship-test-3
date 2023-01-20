@@ -16,8 +16,10 @@
   }
 }
 .weather-card {
+  display: flex;
+  justify-content: space-between;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 5px auto;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -28,9 +30,13 @@
     margin: 0 0 20px 0;
   }
 
-  p {
+  div {
     font-size: 16px;
     margin: 0 0 10px 0;
+  }
+  img {
+    width: 200px;
+    height: 200px;
   }
   .temp {
     font-size: 65px;
@@ -41,6 +47,45 @@
     font-weight: bold;
   }
 }
+
+// scss for alternative weather card
+.alt-weather-card-wrapper{
+  margin: 0 auto;
+    max-width: 60%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+  .alt-weather-card {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    border-right: solid 2px rgba(0, 0, 0, 0.1);
+    align-items: center;
+      div {
+        margin: 5px;
+        font-size: 16px;
+
+      }
+      .max-temp {
+        font-size: 30px;
+        font-weight: bold;
+        color: #1B4DE5;
+      }
+    .date {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  .alt-weather-card:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
 
 // scss for tabs molecules
 

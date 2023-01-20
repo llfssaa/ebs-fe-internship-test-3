@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54965e4b-ff3f-4716-b8a9-a8ade513d225" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/molecules/Tabs.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/mock-data/five-day.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/molecules/AlternativeWeatherCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/organisms/AlternativeWeatherCardContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/organisms/WeatherCardContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/mock-data/mock-data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/mock-data/one-day.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/molecules/Tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/molecules/Tabs.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/molecules/WeatherCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/molecules/WeatherCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/molecules/molecules.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/molecules/molecules.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/organisms/organisms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/organisms/organisms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +89,15 @@
       <workItem from="1672395869491" duration="8093000" />
       <workItem from="1672686541291" duration="3025000" />
       <workItem from="1672943698892" duration="436000" />
+      <workItem from="1673001068269" duration="505000" />
+      <workItem from="1673001598474" duration="8715000" />
+      <workItem from="1673351352042" duration="2444000" />
+      <workItem from="1673428334207" duration="2292000" />
+      <workItem from="1673432989853" duration="18746000" />
+      <workItem from="1673619805815" duration="1618000" />
+      <workItem from="1673873128598" duration="1213000" />
+      <workItem from="1674168090386" duration="4552000" />
+      <workItem from="1674207974983" duration="5642000" />
     </task>
     <servers />
   </component>
