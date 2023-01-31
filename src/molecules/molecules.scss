@@ -16,7 +16,6 @@
   }
 }
 
-
 // scss for alternative weather card
 .alt-weather-card-wrapper {
   margin: 0 auto;
@@ -34,7 +33,10 @@
     }
   }
 
-  a, a:visited, a:active, a:hover{
+  a,
+  a:visited,
+  a:active,
+  a:hover {
     text-decoration: none;
     color: #000;
   }
