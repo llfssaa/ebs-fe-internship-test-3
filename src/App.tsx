@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import axios from 'axios';
 import dayjs from 'dayjs';
 import Form from './molecules/Form';
@@ -11,7 +11,7 @@ import { IWeatherResponse } from './types/types';
 import useDebounce from './helpers/helpers';
 
 function App() {
-  const [city, setCity] = useState('Birmingham');
+  const [city, setCity] = useState('Chisinau  ');
   const [cityName, setCityName] = useState<string>('');
   const API_KEY = '37fbefa34bd1fe7015c40e73fe433de7';
   const [weatherData, setWeatherData] = useState<IWeatherResponse[]>([]);
@@ -21,8 +21,8 @@ function App() {
       if (debounceValue) {
         try {
           const response = await axios.get(
-            /* `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API_KEY}` */
-            'http://localhost:5000/list',
+            `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API_KEY}`,
+            // 'http://localhost:5000/list',
           );
           setWeatherData(response.data.list);
           setCityName(response.data.city.name);
@@ -37,8 +37,9 @@ function App() {
   }, [debounceValue]);
 
   const handleFilter = (day: string) => {
-    return weatherData.filter((item: IWeatherResponse) => {
-      return dayjs(item.dt_txt).format('ddd D') === day;
+    const parseDay = (day.substring(0, 1).toUpperCase() + day.substring(1)).replace(/-/g, ' ').replace(' forecast', '');
+    return weatherData.find((item: IWeatherResponse) => {
+      return dayjs(item.dt_txt).format('ddd D') === parseDay;
     });
   };
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -47,11 +48,11 @@ function App() {
   return (
     <div>
       <Form handleChange={handleChange} city={city} />
-      <Tabs />
       <Routes>
         <Route path="/:day" element={<WeatherCardContainer handleFilter={handleFilter} cityName={cityName} />} />
         )
         <Route path="/shows-5-day-forecast" element={<AlternativeWeatherCardContainer data={weatherData} />} />)
+        <Route path="/" element={<Navigate replace to="/shows-5-day-forecast" />} />
       </Routes>
     </div>
   );

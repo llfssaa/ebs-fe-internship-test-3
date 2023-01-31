@@ -3,6 +3,7 @@ import dayjs from 'dayjs';
 import { Link } from 'react-router-dom';
 import AlternativeWeatherCard from '../molecules/AlternativeWeatherCard';
 import { IWeatherResponse } from '../types/types';
+import '../molecules/molecules.scss';
 
 interface IProps {
   data: IWeatherResponse[];
@@ -32,12 +33,12 @@ function AlternativeWeatherCardContainer({ data }: IProps) {
       icon: item.weather[0].icon,
     };
   };
-
+  const dayUrl = (item: IWeatherResponse) => dayjs(item.dt_txt).format('ddd D').replace(' ', '-').toLowerCase();
   return (
     <div className="alt-weather-card-wrapper">
       {filteredData ? (
         filteredData.map((item: IWeatherResponse) => (
-          <Link to={`/${dayjs(item.dt_txt).format('ddd D')}`} key={item.dt}>
+          <Link to={`/${dayUrl(item)}-forecast`} key={item.dt}>
             <AlternativeWeatherCard key={item.dt} data={helper(item)} />
           </Link>
         ))

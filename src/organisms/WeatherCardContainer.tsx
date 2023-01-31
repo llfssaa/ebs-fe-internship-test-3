@@ -1,14 +1,16 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import WeatherCard from '../molecules/WeatherCard';
 import { IWeatherData, IWeatherResponse } from '../types/types';
+import './organisms.scss';
 
 interface IWeatherCardContainerProps {
   cityName: string;
-  handleFilter: (day: string) => IWeatherResponse[];
+  handleFilter: (day: string) => IWeatherResponse | undefined;
 }
 function WeatherCardContainer({ cityName, handleFilter }: IWeatherCardContainerProps) {
   const { day } = useParams();
+  const navigate = useNavigate();
   const filteredData = handleFilter(day);
   const helper = (item: IWeatherResponse, city: string): IWeatherData => {
     return {
@@ -23,15 +25,15 @@ function WeatherCardContainer({ cityName, handleFilter }: IWeatherCardContainerP
   };
 
   return (
-    <div className="alt-weather-card-wrapper">
-      <div>
-        Weathers for {cityName} {day ? `on ${day}` : ''}
-      </div>
+    <div className="weather-card-container">
       {filteredData ? (
-        filteredData.map((item: IWeatherResponse) => <WeatherCard key={item.dt} data={helper(item, cityName)} />)
+        <WeatherCard key={filteredData.dt} data={helper(filteredData, cityName)} />
       ) : (
         <p>No results found</p>
       )}
+      <button type="button" onClick={() => navigate(-1)}>
+        ⮜ Back
+      </button>
     </div>
   );
 }

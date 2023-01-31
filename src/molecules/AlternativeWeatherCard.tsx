@@ -1,4 +1,5 @@
 import React from 'react';
+import './molecules.scss';
 
 interface IAltWeatherCardProps {
   data: any;
@@ -6,7 +7,6 @@ interface IAltWeatherCardProps {
 function AlternativeWeatherCard({ data }: IAltWeatherCardProps) {
   const { maxTemp, minTemp, date, description, icon }: any = data;
   return (
-    // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
     <div className="alt-weather-card">
       <div className="date">{date}</div>
       <div className="max-temp">{maxTemp} °C</div>

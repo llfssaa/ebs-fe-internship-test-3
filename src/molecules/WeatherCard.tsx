@@ -11,14 +11,23 @@ interface IWeatherCardProps {
   data: IWeatherData;
 }
 function WeatherCard({ data }: IWeatherCardProps) {
-  const { temperature, time, info, description, icon }: IWeatherData = data;
+  const { temperature, time, info, description, icon, city }: IWeatherData = data;
   return (
-    <div className="alt-weather-card">
-      <div>as of {dayjs(time).format('LT')}</div>
-      <div className="temp">{Math.floor(temperature)} °C</div>
-      <div className="info">{info}</div>
-      <div>{description}</div>
-      <img className="weather-card__icon" src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="weather-icon" />
+    <div className="weather-card">
+      <p>
+        Weathers for {city} {`on ${dayjs(time).format('ddd DD')}`}{' '}
+      </p>
+      <div className="weather-info">
+        <div>
+          <div>as of {dayjs(time).format('LT')}</div>
+          <div className="temp">{Math.floor(temperature)} °C</div>
+          <div className="info">{info}</div>
+          <div>{description}</div>
+        </div>
+        <div className="weather-card__icon">
+          <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="weather-icon" />
+        </div>
+      </div>
     </div>
   );
 }
