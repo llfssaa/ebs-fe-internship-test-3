@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="54965e4b-ff3f-4716-b8a9-a8ade513d225" name="Changes" comment="" />
+=======
+    <list default="true" id="54965e4b-ff3f-4716-b8a9-a8ade513d225" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/molecules/AlternativeWeatherCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/molecules/AlternativeWeatherCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/molecules/WeatherCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/molecules/WeatherCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/molecules/molecules.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/molecules/molecules.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/organisms/AlternativeWeatherCardContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/organisms/AlternativeWeatherCardContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/organisms/WeatherCardContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/organisms/WeatherCardContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/organisms/organisms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/organisms/organisms.scss" afterDir="false" />
+    </list>
+>>>>>>> feature/weather-card
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +86,16 @@
       <workItem from="1672395869491" duration="8093000" />
       <workItem from="1672686541291" duration="3025000" />
       <workItem from="1672943698892" duration="436000" />
+      <workItem from="1673001068269" duration="505000" />
+      <workItem from="1673001598474" duration="8715000" />
+      <workItem from="1673351352042" duration="2444000" />
+      <workItem from="1673428334207" duration="2292000" />
+      <workItem from="1673432989853" duration="18746000" />
+      <workItem from="1673619805815" duration="1618000" />
+      <workItem from="1673873128598" duration="1213000" />
+      <workItem from="1674168090386" duration="4552000" />
+      <workItem from="1674207974983" duration="14578000" />
+      <workItem from="1675077768292" duration="2412000" />
     </task>
     <servers />
   </component>

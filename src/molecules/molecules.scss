@@ -1,3 +1,4 @@
+// scss for form molecules
 .form {
   padding-bottom: 30px;
   width: 100%;
@@ -14,29 +15,73 @@
     border-radius: 0 4px 4px 0;
   }
 }
-.weather-card {
-  max-width: 600px;
+
+// scss for alternative weather card
+.alt-weather-card-wrapper {
   margin: 0 auto;
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
 
-  h1 {
-    font-size: 24px;
-    margin: 0 0 20px 0;
+  a:last-child {
+    div:first-child {
+      border-right: none;
+    }
   }
 
-  p {
-    font-size: 16px;
-    margin: 0 0 10px 0;
+  a,
+  a:visited,
+  a:active,
+  a:hover {
+    text-decoration: none;
+    color: #000;
   }
-  .temp {
-    font-size: 65px;
-    font-weight: bold;
+
+  .alt-weather-card {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    border-right: solid 2px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    div {
+      margin: 5px;
+      font-size: 16px;
+    }
+    .max-temp {
+      font-size: 30px;
+      font-weight: bold;
+      color: #1b4de5;
+    }
+    .date {
+      font-size: 16px;
+      font-weight: bold;
+    }
   }
-  .info {
-    font-size: 24px;
-    font-weight: bold;
+}
+
+// scss for tabs molecules
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: #999;
+    transition: all 0.2s;
+
+    &.active {
+      color: #333;
+      border-color: #333;
+    }
   }
 }

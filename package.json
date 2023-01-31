@@ -19,6 +19,7 @@
     "prettier": "^2.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
@@ -32,7 +33,8 @@
     "lint": "eslint ./src}",
     "lint:fix": "eslint ./src --fix ",
     "format": "npx prettier --write .",
-    "server": "json-server --watch ./src/assets/mock-data/mock-data.json --port 8000"
+    "server": "json-server --watch src/assets/mock-data/one-day.json --port 8000",
+    "server:five": "json-server --watch src/assets/mock-data/five-day.json --port 5000"
   },
   "eslintConfig": {
     "extends": [
